@@ -9,16 +9,28 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>neworder-application</artifactId>
+    <name>Ecommerce</name>
 
     <dependencies>
         <dependency>
             <groupId>br.com</groupId>
-            <artifactId>neworder-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>br.com</groupId>
             <artifactId>neworder-service</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,5 +52,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>new-order</finalName>
     </build>
 </project>

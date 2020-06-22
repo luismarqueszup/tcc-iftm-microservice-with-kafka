@@ -26,7 +26,12 @@ public class NewOrderController implements NewOrderApi {
     }
 
     @Override
-    public String sendTwoBillion() {
-        return newOrderService.producerTwoBillionNewOrder();
+    public String sendTwoMillion() {
+        return newOrderService.producerTwoMillionNewOrder();
+    }
+
+    @Override
+    public String sendOneBillion() {
+        return newOrderService.producerOneBillionNewOrder();
     }
 }

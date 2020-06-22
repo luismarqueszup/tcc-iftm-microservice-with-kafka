@@ -1,4 +1,4 @@
-package br.com.payment.producer;
+package br.com.send.producer;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Value;

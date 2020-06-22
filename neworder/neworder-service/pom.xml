@@ -14,12 +14,10 @@
         <dependency>
             <groupId>br.com</groupId>
             <artifactId>neworder-kafka</artifactId>
-            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>br.com</groupId>
             <artifactId>neworder-domain</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

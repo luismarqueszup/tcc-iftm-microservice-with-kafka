@@ -1,5 +1,6 @@
 package br.com.neworder.config;
 
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -24,6 +25,7 @@ public class ConfigProducerTopic {
 
     private ProducerFactory<String, Object> producerFactory() {
         HashMap<String, Object> conf = new HashMap<>();
+        conf.put(JsonSerializer.ADD_TYPE_INFO_HEADERS, false);
         conf.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, serverPort);
         conf.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
         conf.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);

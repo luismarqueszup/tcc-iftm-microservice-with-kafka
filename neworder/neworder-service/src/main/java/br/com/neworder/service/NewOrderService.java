@@ -35,19 +35,28 @@ public class NewOrderService {
         for (int i = 0; i < 10000; i++) {
             NewOrder newOrder = generateNewOrder();
             kafkaTemplate.send(producerNewOrderTopic, newOrder.getId(), newOrder);
+            System.out.println(newOrder.getId());
         }
         return "Order successfully processed";
     }
 
-    public String producerTwoBillionNewOrder() {
-        for (int i = 0; i < 2000000000; i++) {
+    public String producerTwoMillionNewOrder() {
+        for (int i = 0; i < 2000000; i++) {
             NewOrder newOrder = generateNewOrder();
             kafkaTemplate.send(producerNewOrderTopic, newOrder.getId(), newOrder);
         }
         return "Order successfully processed";
     }
 
-    private NewOrder generateNewOrder(){
+    public String producerOneBillionNewOrder() {
+        for (int i = 0; i < 1000000000; i++) {
+            NewOrder newOrder = generateNewOrder();
+            kafkaTemplate.send(producerNewOrderTopic, newOrder.getId(), newOrder);
+        }
+        return "Order successfully processed";
+    }
+
+    private NewOrder generateNewOrder() {
         CreditCard creditCard = new CreditCard("1234.1234.12654-24", LocalDate.now(), 5000d);
         Costumer costumer = new Costumer(1l, "Costumer", creditCard);
         return new NewOrder(UUID.randomUUID().toString(), 10d, LocalDateTime.now(), costumer);
