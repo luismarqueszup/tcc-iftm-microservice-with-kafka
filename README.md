@@ -7,3 +7,19 @@ O sistema desenvolvido é em experimento composto de 3 microsserviços, onde é 
 ## Objetivo
 
 Essa pesquisa possui significativa relevância por apresentar o quanto é vantajoso utilizar o Apache Kafka como uma plataforma distribuída de dados, sendo ela capaz de gerenciar fluxo de dados em tempo real entre vários microsserviços, bem como, o desenvolvimento de um experimento para que seja possível capturar métricas mostrando os resultados obtidos e as vantagens da utilização dessa plataforma e exibi-las através de dashboards.
+
+# Tecnologias Utilizadas
+
+Spring Boot
+
+Java 11
+
+Rest
+
+Swagger 2.0
+
+Apache kafka
+
+Prometheus e Grafana
+
+# API´s disponíveis
