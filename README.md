@@ -44,20 +44,20 @@ Para utilizar o projeto é necessário ter:
 
 3º Iniciar os 3 microsserviços, voltando na pasta raiz do projeto:
 
-  3.1 Entre na pasta **neworder** através de um terminal e execute os comandos abaixo:
+>  3.1 Entre na pasta **neworder** através de um terminal e execute os comandos abaixo:
   
-   **mvn clean package**
+>  $ mvn clean package
 
-   **java -jar neworder-application\target\new-order.jar**
+>  $ java -jar neworder-application\target\new-order.jar
    
-   3.2 Entre na pasta **payment** através de um terminal e execute os comandos abaixo:
+>  3.2 Entre na pasta **payment** através de um terminal e execute os comandos abaixo:
 
-   **mvn clean package**
+>  $ mvn clean package
 
-   **java -jar payment-application\target\payment-application-0.0.1-SNAPSHOT.jar**
+>  $ java -jar payment-application\target\payment-application-0.0.1-SNAPSHOT.jar
    
-   3.3 Entre na pasta **send** através de um terminal e execute os comandos abaixo:
+>   3.3 Entre na pasta **send** através de um terminal e execute os comandos abaixo:
 
-   **mvn clean package**
+>   $ mvn clean package
 
-   **java -jar send-application\target\send-application-0.0.1-SNAPSHOT.jar**
+>   $ java -jar send-application\target\send-application-0.0.1-SNAPSHOT.jar
